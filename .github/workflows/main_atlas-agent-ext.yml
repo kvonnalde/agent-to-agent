@@ -62,4 +62,6 @@ jobs:
           app-name: 'atlas-agent-ext'
           slot-name: 'Production'
           package: .
+          # Pins the startup DLL so Oryx can't pick a stale app's runtimeconfig.json left in wwwroot.
+          startup-command: 'dotnet AgentToAgent.Chatbot.dll'
           
