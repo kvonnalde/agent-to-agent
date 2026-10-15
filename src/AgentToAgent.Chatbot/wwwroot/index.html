@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas Agent Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-bg">
+    <div class="chat-shell">
+      <header class="chat-header">
+        <div class="brand">
+          <div class="brand-avatar">A</div>
+          <div class="brand-text">
+            <h1>Atlas Agent</h1>
+            <p>General assistant &middot; answers Atlas / AI Hub questions live</p>
+          </div>
+        </div>
+        <div class="status-pill"><span class="status-dot"></span>Online</div>
+      </header>
+
+      <main id="messages" class="chat-messages" aria-live="polite"></main>
+
+      <form id="chat-form" class="chat-input-row">
+        <textarea id="chat-input" placeholder="Ask me anything…" rows="1" autofocus></textarea>
+        <button type="submit" id="send-button" aria-label="Send message">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M3.4 20.6 22 12 3.4 3.4 3 10l12 2-12 2z" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

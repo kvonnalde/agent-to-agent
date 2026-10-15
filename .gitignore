@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+*.user
+
+# Local secrets — fill these in locally, never commit real keys.
+appsettings.Development.json
